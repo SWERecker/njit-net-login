@@ -4,7 +4,7 @@ import requests
 import os
 
 # 校园网登录脚本，默认选择外网
-# 通过fiddler抓取登录时的POST包并用requests库发送POST请求，间隔5秒请求一次
+# 通过fiddler抓取登录时的POST包并用requests库发送POST请求，间隔5秒检查一次是否掉线，若掉线则重连
 # Usage: python login.py (控制台运行)
 # 使用pythonw可以后台持续运行
 
